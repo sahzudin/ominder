@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test/model-test.js && node test/removal-policy-test.js",
+    "test": "node test/model-test.js && node test/removal-policy-test.js && node test/qml-security-test.js",
     "validate": "omarchy plugin validate ."
   }
 }

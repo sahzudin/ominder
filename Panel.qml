@@ -254,6 +254,7 @@ Panel {
 
           Text {
             text: "󰂜"
+            textFormat: Text.PlainText
             color: root.contentForeground
             font.family: root.contentFontFamily
             font.pixelSize: Style.font.heading
@@ -267,6 +268,7 @@ Panel {
             Text {
               Layout.fillWidth: true
               text: "Ominder"
+              textFormat: Text.PlainText
               color: root.contentForeground
               font.family: root.contentFontFamily
               font.pixelSize: Style.font.subtitle
@@ -278,6 +280,7 @@ Panel {
               text: root.reminders.length === 0
                 ? "No upcoming reminders"
                 : root.reminders.length === 1 ? "1 upcoming reminder" : root.reminders.length + " upcoming reminders"
+              textFormat: Text.PlainText
               color: root.contentDim
               font.family: root.contentFontFamily
               font.pixelSize: Style.font.caption
@@ -301,6 +304,7 @@ Panel {
           Text {
             Layout.fillWidth: true
             text: "REMIND ME"
+            textFormat: Text.PlainText
             color: root.contentDim
             font.family: root.contentFontFamily
             font.pixelSize: Style.font.bodySmall
@@ -341,6 +345,7 @@ Panel {
           Text {
             Layout.fillWidth: true
             text: "minutes from now"
+            textFormat: Text.PlainText
             color: root.contentDim
             font.family: root.contentFontFamily
             font.pixelSize: Style.font.body
@@ -381,6 +386,7 @@ Panel {
           Text {
             Layout.fillWidth: true
             text: "local time"
+            textFormat: Text.PlainText
             color: root.contentDim
             font.family: root.contentFontFamily
             font.pixelSize: Style.font.body
@@ -477,6 +483,7 @@ Panel {
           Text {
             Layout.fillWidth: true
             text: "UPCOMING"
+            textFormat: Text.PlainText
             color: root.contentDim
             font.family: root.contentFontFamily
             font.pixelSize: Style.font.bodySmall
@@ -498,6 +505,7 @@ Panel {
           visible: root.reminders.length === 0
           width: parent.width
           text: "Choose a quick duration or an exact local date and time above."
+          textFormat: Text.PlainText
           color: root.contentDim
           font.family: root.contentFontFamily
           font.pixelSize: Style.font.body
@@ -534,6 +542,7 @@ Panel {
 
               Text {
                 text: "󰃭"
+                textFormat: Text.PlainText
                 color: root.contentForeground
                 font.family: root.contentFontFamily
                 font.pixelSize: Style.font.icon
@@ -547,6 +556,7 @@ Panel {
                 Text {
                   Layout.fillWidth: true
                   text: modelData.label
+                  textFormat: Text.PlainText
                   color: root.contentForeground
                   font.family: root.contentFontFamily
                   font.pixelSize: Style.font.body
@@ -556,6 +566,7 @@ Panel {
                 Text {
                   Layout.fillWidth: true
                   text: Model.reminderMeta(modelData)
+                  textFormat: Text.PlainText
                   color: root.contentDim
                   font.family: root.contentFontFamily
                   font.pixelSize: Style.font.caption
@@ -576,6 +587,7 @@ Panel {
           visible: root.repeatRules.length > 0
           width: parent.width
           text: "REPEATING"
+          textFormat: Text.PlainText
           color: root.contentDim
           font.family: root.contentFontFamily
           font.pixelSize: Style.font.bodySmall
@@ -612,6 +624,7 @@ Panel {
 
               Text {
                 text: "󰑖"
+                textFormat: Text.PlainText
                 color: root.contentForeground
                 font.family: root.contentFontFamily
                 font.pixelSize: Style.font.icon
@@ -625,6 +638,7 @@ Panel {
                 Text {
                   Layout.fillWidth: true
                   text: modelData.message !== "" ? modelData.message : modelData.minutes + "-min reminder"
+                  textFormat: Text.PlainText
                   color: root.contentForeground
                   font.family: root.contentFontFamily
                   font.pixelSize: Style.font.body
@@ -634,6 +648,7 @@ Panel {
                 Text {
                   Layout.fillWidth: true
                   text: root.repeatMeta(modelData)
+                  textFormat: Text.PlainText
                   color: root.contentDim
                   font.family: root.contentFontFamily
                   font.pixelSize: Style.font.caption
@@ -658,6 +673,7 @@ Panel {
           visible: root.statusText !== ""
           width: parent.width
           text: root.statusText
+          textFormat: Text.PlainText
           color: root.contentDim
           font.family: root.contentFontFamily
           font.pixelSize: Style.font.caption
