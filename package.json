@@ -1,0 +1,10 @@
+{
+  "name": "ominder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/model-test.js && node test/removal-policy-test.js",
+    "validate": "omarchy plugin validate ."
+  }
+}

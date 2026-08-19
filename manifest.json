@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.sahzudin.ominder",
+  "name": "Ominder",
+  "version": "0.1.0",
+  "author": "Sahzudin Mahmic",
+  "license": "MIT",
+  "description": "Create and review lightweight Omarchy reminders from the bar.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Ominder",
+    "description": "Create and review lightweight reminders",
+    "category": "Time",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
